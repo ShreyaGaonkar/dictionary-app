@@ -29,13 +29,11 @@ function Dictionary() {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button onClick={handleSearch}>Search</button>
-      {definition && definition !== 'Word not found in the dictionary.' ? (
+      {definition && (
       <div>
         <strong>Definition:</strong><br/>
         {definition}
-      </div>
-    ) : (
-      <div>{definition}</div>
+        </div>
     )}
     </div>
   );
