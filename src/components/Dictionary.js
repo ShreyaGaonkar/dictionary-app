@@ -29,12 +29,10 @@ function Dictionary() {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button onClick={handleSearch}>Search</button>
-      {definition && (
       <div>
         <strong>Definition:</strong><br/>
         {definition}
         </div>
-    )}
     </div>
   );
 }
