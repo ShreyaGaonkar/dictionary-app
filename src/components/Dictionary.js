@@ -30,9 +30,11 @@ function Dictionary() {
       />
       <button onClick={handleSearch}>Search</button>
       <div>
-        <strong>Definition:</strong><br/>
-        {definition}
-        </div>
+      <strong>Definition:</strong>
+      {definition && (
+        <div><br/>{definition}</div>
+      )}
+    </div>
     </div>
   );
 }
